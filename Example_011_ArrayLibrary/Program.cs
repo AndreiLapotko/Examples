@@ -15,7 +15,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(col[position]);
+        Console.Write(position == count - 1 ? $"{col[position]}" : $"{col[position]}, ");
         position++;
     }
 }
